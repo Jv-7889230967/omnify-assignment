@@ -16,18 +16,57 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .link-button
+  {
+    @apply flex flex-row items-center h-[32px] w-full font-medium hover:bg-[#FFFFFF] rounded-[6px] gap-[7px];
+  }
+  .small-link-button
+  {
+    @apply flex flex-row items-center justify-center h-[32px] w-full font-medium gap-[8px] hover:bg-[#FFFFFF] rounded-[6px] gap-[7px];
+  }
+  .parent-container
+  {
+    @apply flex flex-col h-screen w-screen border-2 border-solid border-black;
+  }
+  .nav-p
+  {
+    @apply flex items-center font-medium bg-[#FFFFFF] p-[10px] h-[40px] md:w-[360px] w-[160px] border-2 border-solid border-black rounded-lg;
+  }
+  img{
+    @apply cursor-pointer;
+  }
+  .table-container
+  {
+    @apply h-[1370px] max-h-fit w-full flex flex-col border-2 border-solid border-black;
+  }
+  ::-webkit-scrollbar {
+    width: 5px; /* Width of the vertical scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+  }
+  
+  /* Optional: customize scrollbar buttons */
+  ::-webkit-scrollbar-button {
+    display: none; /* Hide the scrollbar buttons */
   }
 }

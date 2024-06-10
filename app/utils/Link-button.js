@@ -1,0 +1,22 @@
+export const buttons=[
+    {
+        id:1,
+        image:'assets/orderlogo.svg',
+        name:'Order',
+    },
+    {
+        id:2,
+        image:'assets/subscriptionslogo.svg',
+        name:'Subscriptions',
+    },
+    {
+        id:3,
+        image:'assets/calendarlogo.svg',
+        name:'Calendar',
+    },
+    {
+        id:4,
+        image:'assets/waitlistlogo.svg',
+        name:'Waitlist',
+    }
+]

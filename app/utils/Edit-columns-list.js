@@ -1,0 +1,38 @@
+export const editlist=
+[
+  {
+    id:1,
+    name:'createdon',
+    label:'Created-on'
+  },
+  {
+    id:2,
+    name:'payer',
+    label:'Payer'
+  },
+  {
+    id:3,
+    name:'status',
+    label:'Status'
+  },
+  {
+    id:4,
+    name:'email',
+    label:'Email'
+  },
+  {
+    id:5,
+    name:'phone',
+    label:'Phone'
+  },
+  {
+    id:6,
+    name:'services',
+    label:'Services'
+  },
+  {
+    id:7,
+    name:'schedule',
+    label:'Scheduled'
+  }
+]
