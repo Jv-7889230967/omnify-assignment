@@ -20,8 +20,8 @@ const Services = () => {
           onChange={handleChange}
           style={{width:'100%'}}
         >
-          <FormControlLabel style={{marginRight:60}} value="name" control={<Radio />} label="Search by name" />
-          <FormControlLabel value="tags" control={<Radio />} label="Search by tags" />
+          <FormControlLabel  value="name" control={<Radio />} label="by name" />
+          <FormControlLabel value="tags" control={<Radio />} label="by tags" />
         </RadioGroup>
       </div>
       {value==='name'&&<SearchName/>}

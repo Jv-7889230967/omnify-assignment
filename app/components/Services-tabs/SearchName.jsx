@@ -15,7 +15,7 @@ export default function SearchName() {
       id="Search Payer or Attendee Name"
       options={rows}
       disableCloseOnSelect
-      getOptionLabel={(option) => `${option.services}`}
+      getOptionLabel={(option) => option.services}
       renderOption={(props, option, { selected }) => (
         <li {...props} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
