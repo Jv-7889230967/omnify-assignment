@@ -30,7 +30,7 @@
   }
   .parent-container
   {
-    @apply flex flex-col h-screen w-screen border-2 border-solid border-black;
+    @apply overflow-hidden flex h-screen w-screen;
   }
   .nav-p
   {
@@ -42,6 +42,26 @@
   .table-container
   {
     @apply h-[1370px] max-h-fit w-full flex flex-col border-2 border-solid border-black;
+  }
+  .editor-container
+  {
+    @apply z-10 fixed top-[185px] h-[402px] sm:w-[612px] w-[360px] flex flex-col rounded-md;
+  }
+  .editor-button
+  {
+    @apply overflow-hidden h-[36px] w-full flex p-[4px] gap-[3px] items-center rounded-md whitespace-nowrap;
+  }
+  option
+  {
+    @apply ml-[10px] cursor-pointer;
+  }
+  .dropdown-btn
+  {
+    @apply text-start pl-[10px];
+  }
+  .editor-page-container
+  {
+    @apply  h-full sm:w-[500px] w-[80%] bg-[white] flex flex-col gap-[38px] p-[10px];
   }
   ::-webkit-scrollbar {
     width: 5px; /* Width of the vertical scrollbar */

@@ -1,30 +1,15 @@
 "use client"
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import {React, useState } from 'react'
 import { buttons } from '../utils/Link-button';
 
 const SideBar = () => {
     const [show, setShow] = useState(true);
     const HandleShow = () => {
         setShow(!show);
-        console.log(show)
     }
-    useEffect(() => {
-        const mediaQuery = window.matchMedia('(max-width: 600px)');
-        
-        const handleMediaQueryChange = (e) => {
-            setShow(!e.matches); // Set show to false if the screen width is <= 640px
-        };
-
-        handleMediaQueryChange(mediaQuery); // Initial check
-        mediaQuery.addListener(handleMediaQueryChange); // Add listener
-
-        return () => {
-            mediaQuery.removeListener(handleMediaQueryChange); // Clean up listener
-        };
-    }, []);
     return (
-        <aside className={`z-1000 flex flex-col items-center h-screen p-[10px] ${show ? 'w-[270px]' : 'w-[64px]'} transition-all ease-in-out duration-500 bg-[#F8FAFC]`}>
+        <aside className={`relative z-20 sm:flex hidden flex-col items-center h-screen p-[10px] ${show ? 'w-[270px]' : 'w-[64px]'} transition-all ease-in-out duration-500 bg-[#F8FAFC]`}>
             <div className={`flex justify-between items-center h-[64px] w-full p-[8px]`}>
                 <div className='flex items-center gap-[8px]'>
                     <Image src={'/assets/sidebarlogo.svg'} alt='logo' height={30} width={30} />
